@@ -1,17 +1,14 @@
 package city.inhabitant;
 
-import city.City;
 
 public class Inhabitant {
 	
 	protected String name;
 	protected double bankAccount;
-	protected City city;
 	
-	public Inhabitant(String name, double bankAccount, City city){
+	public Inhabitant(String name, double bankAccount){
 		this.name = name;
 		this.bankAccount = bankAccount;
-		this.city = city;
 	}
 	
 	public void credit(double amount){
@@ -28,9 +25,5 @@ public class Inhabitant {
 	
 	public double getBankAccount(){
 		return bankAccount;
-	}
-	
-	public City getCity(){
-		return city;
 	}
 }

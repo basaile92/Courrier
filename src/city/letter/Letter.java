@@ -1,6 +1,7 @@
 package city.letter;
 
 import city.inhabitant.Inhabitant;
+import city.letter.content.Content;
 
 public abstract class Letter <T extends Content>{
 	protected Inhabitant sender;
