@@ -22,7 +22,8 @@ public class City {
 	}
 	
 	public void distributeLetter(){
-		//TODO
+		for (Letter p : postBox)
+			p.action();
 	}
 	
 	public String getName(){
