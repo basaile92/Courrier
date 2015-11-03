@@ -8,6 +8,8 @@ public abstract class Letter <T extends Content>{
 	protected Inhabitant receiver;
 	protected T content;
 	protected double cost;
+	protected boolean send = false;
+	protected boolean received = false;
 	
 	public Letter(Inhabitant sender, Inhabitant receiver, T content, double cost){
 		this.sender = sender;
@@ -32,5 +34,13 @@ public abstract class Letter <T extends Content>{
 	
 	public double getCost(){
 		return cost;
+	}
+	
+	public boolean isSend(){
+		return send;
+	}
+	
+	public boolean isReceived(){
+		return received;
 	}
 }

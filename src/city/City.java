@@ -1,5 +1,6 @@
 package city;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import city.inhabitant.Inhabitant;
@@ -22,8 +23,13 @@ public class City {
 	}
 	
 	public void distributeLetter(){
-		for (Letter p : postBox)
+		List<Letter> trash = new ArrayList<Letter>();
+		for (Letter p : postBox){
 			p.action();
+			if (p.isReceived())
+				trash.add(p);
+		}
+		postBox.removeAll(trash);
 	}
 	
 	public String getName(){
