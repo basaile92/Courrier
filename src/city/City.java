@@ -5,7 +5,7 @@ import java.util.List;
 
 import city.inhabitant.Inhabitant;
 import city.letter.Letter;
-
+//Ton code c'est de la merde
 public class City {
 
 	protected String name;
